@@ -30,6 +30,13 @@ ffDownloadHelper.getFileName = function(doc)
 }
 ffDownloadHelper.onLoad = function() 
 {
+	/* Remove Premium spam */
+	spamIDs = ['aContainer','premium','priceTable','dataPack', 'tableFooters']
+	for (i in spamIDs) {
+		var div = document.getElementById(spamIDs[i]);
+		if (div) div.style.display = "none"
+	}
+
 	var doc = document;
 	var downloadcounter = doc.getElementById("basicTimer");
 	if (downloadcounter) {
