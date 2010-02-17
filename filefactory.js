@@ -37,7 +37,6 @@ ffDownloadHelper.onLoad = function()
 		var downloadlink = doc.getElementById("downloadLink");
 		if (downloadlink) {
 			downloadlink.hidden = true;
-			if (downloadlink.firstChild) downloadlink.firstChild.style.display = 'none';
 		}
 
 		var folderPath = "";
@@ -52,6 +51,8 @@ ffDownloadHelper.onLoad = function()
 		confirmText.innerHTML = "";
 		confirmText.style.color = "#1a7e1e"
 		confirmText.style.paddingTop = "2px";
+		confirmText.style.fontSize = "12px"
+		confirmText.style.lineHeight = "24px"
 		div.appendChild(confirmText);
 
 		downloadcounter.parentNode.appendChild(div);
