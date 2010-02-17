@@ -1,0 +1,15 @@
+{
+   "content_scripts": [ {
+      "js": [ "filefactory.js" ],
+      "matches": [ "http://www.filefactory.com/*" ],
+      "run_at": "document_end"
+   } ],
+   "description": "No More Countdowns - Automatic Downloads.",
+   "icons": {
+      "128": "ff-128.png",
+      "48": "ff-48.png"
+   },
+   "name": "FileFactory DownloadHelper",
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "0.1"
+}
