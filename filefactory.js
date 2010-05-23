@@ -65,7 +65,7 @@ ffDownloadHelper.onLoad = function()
 		downloadcounter.parentNode.appendChild(div);
 
 		var ina = setInterval(function() {
-			var countdown = doc.getElementById("countdown");
+			var countdown = document.getElementsByClassName("countdown")[0];
 			confirmText.innerHTML = "Now you can continue browsing, the file will be downloaded automatically!<br>Your automatic download will start in <font style='font-size:12px;color:#df3f4e'><b>"+ countdown.innerHTML +"</b></font> seconds.";
 			
 			if (countdown.innerHTML == "1") {
