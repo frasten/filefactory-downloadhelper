@@ -31,11 +31,12 @@ ffDownloadHelper.getFileName = function(doc)
 ffDownloadHelper.onLoad = function() 
 {
 	/* Remove Premium spam */
-	spamIDs = ['aContainer','premium','priceTable','dataPack', 'tableFooters']
+	spamIDs = ['aContainer','premium','priceTable','dataPack', 'tableFooters', 'dlNotice']
 	for (i in spamIDs) {
 		var div = document.getElementById(spamIDs[i]);
 		if (div) div.style.display = "none"
 	}
+	document.getElementById("dataPack").nextElementSibling.style.display = "none"
 
 	var doc = document;
 	var downloadcounter = doc.getElementById("basicTimer");
