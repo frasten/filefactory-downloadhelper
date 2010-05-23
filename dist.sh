@@ -9,5 +9,5 @@ rm -rf $DISTDIR
 echo 
 echo "-----------------------------------------------------------------"
 echo "$DISTDIR.zip file created. Now upload it to:"
-echo "https://chrome.google.com/extensions/developer/update"
+echo "https://chrome.google.com/extensions/developer/edit/bkopjcddgkdkgdmilloigbbelkfnpppk"
 echo
