@@ -36,7 +36,8 @@ ffDownloadHelper.onLoad = function()
 		var div = document.getElementById(spamIDs[i]);
 		if (div) div.style.display = "none"
 	}
-	document.getElementById("dataPack").nextElementSibling.style.display = "none"
+	var div = document.getElementById("dataPack");
+	if (div) div.nextElementSibling.style.display = "none"
 
 	var doc = document;
 	var downloadcounter = doc.getElementById("basicTimer");
